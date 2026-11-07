@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Digital Product Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #6366f1;
+            --accent-hover: #4f46e5;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        /* Header Section */
+        .badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Feature Card / Hero Banner */
+        .hero-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .preview-box {
+            width: 100%;
+            height: 240px;
+            background: linear-gradient(135deg, #312e81 0%, #4338ca 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c7d2fe;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border: 1px dashed #6366f1;
+        }
+
+        /* Features List */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+            color: #e2e8f0;
+        }
+
+        .feature-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Pricing & Call to Action */
+        .cta-section {
+            background: linear-gradient(180deg, var(--card-bg) 0%, rgba(30, 41, 59, 0.5) 100%);
+            border: 1px solid var(--accent-color);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+        }
+
+        .price-tag {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 15px 0;
+        }
+
+        .price-tag span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            text-decoration: line-through;
+            margin-left: 10px;
+            font-weight: 400;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            width: 100%;
+            max-width: 320px;
+            padding: 16px 32px;
+            background: var(--accent-color);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-buy:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+        }
+
+        .guarantee {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Badge Header -->
+        <div style="text-align: center;">
+            <span class="badge">🚀 DIGITAL RESOURCE PACK</span>
+            <h1>Ultimate Aesthetic Planner & Productivity Pack</h1>
+            <p class="subtitle">Streamline your daily workflow, organize your tasks, and boost your gaming & work setup efficiency.</p>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div class="hero-card">
+            <!-- Thay bằng hình ảnh sản phẩm thật của anh bằng thẻ <img> nếu có -->
+            <div class="preview-box">
+                [ PRODUCT PREVIEW IMAGE / BANNER ]
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+                This all-in-one digital template includes professionally designed layouts, automated tracking sheets, and exclusive resources crafted for digital creators and gaming enthusiasts.
+            </p>
+        </div>
+
+        <!-- Key Features Grid -->
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>⚡ Ready to Use</h3>
+                <p>Instant download access right after purchase. No technical setup required.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🎨 Fully Customizable</h3>
+                <p>Easily edit colors, layouts, and fonts to match your personal aesthetic.</p>
+            </div>
+            <div class="feature-item">
+                <h3>📱 Multi-Device Support</h3>
+                <p>Access seamlessly from your desktop, tablet, or smartphone anytime.</p>
+            </div>
+        </div>
+
+        <!-- Pricing & Call to Action -->
+        <div class="cta-section">
+            <h2>Get Instant Access Today</h2>
+            <p style="color: var(--text-muted); margin-top: 5px;">One-time payment • Lifetime updates included</p>
+            
+            <div class="price-tag">$14.99 <span>$29.99</span></div>
+
+            <!-- CHỈ CẦN THAY LINK GUMROAD / PAYHIP CỦA ANH VÀO HREF BÊN DƯỚI -->
+            <a href="https://payhip.com" class="btn-buy" target="_blank">Download Now</a>
+
+            <div class="guarantee">🔒 Instant digital file delivery via Email</div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Your Brand Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
